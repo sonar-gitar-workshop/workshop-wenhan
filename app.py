@@ -46,7 +46,7 @@ def create_order():
     order = {
         "id": order_id,
         # "reference": f"order-{order_id}",
-        "reference": f"order-{orid}",
+        "reference": f"ORDER-{int(order_id):06d}",
         "items": line_items,
         "total_cents": total_cents,
     }
