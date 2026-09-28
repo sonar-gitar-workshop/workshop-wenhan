@@ -45,7 +45,8 @@ def create_order():
     order_id = str(len(ORDERS) + 1)
     order = {
         "id": order_id,
-        "reference": f"order-{order_id}",
+        # "reference": f"order-{order_id}",
+        "reference": f"order-{orid}",
         "items": line_items,
         "total_cents": total_cents,
     }
